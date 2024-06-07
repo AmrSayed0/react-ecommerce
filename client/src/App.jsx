@@ -22,8 +22,8 @@ const App = () => {
           <Route path="/register" element={<Register />} />
         <Route path="/sign-in" element={<SignIn />} /> */}
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </main>
   );
 };
