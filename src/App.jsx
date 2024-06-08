@@ -31,7 +31,7 @@ const App = () => {
               <Category category={"electronics"} banner={electronicsbanner} />
             }
           />
-          <Route path="/products" element={<Product />}>
+          <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
           {/* <Route path="cart-page" element={<Cart />} />

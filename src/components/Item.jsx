@@ -1,9 +1,14 @@
+/* eslint-disable react/prop-types */
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const Item = ({ id, name, image, old_price, new_price }) => {
   return (
-    <Link to={""} className="bg-white p-4 rounded-xl relative">
+    <Link
+      to={`/product/${id}`}
+      onClick={window.scrollTo(0, 0)}
+      className="bg-white p-4 rounded-xl relative"
+    >
       <div className="flexCenter">
         <img
           src={image}
